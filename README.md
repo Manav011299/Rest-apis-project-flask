@@ -1,4 +1,4 @@
-## REST APIs Recording Project
+## REST APIs Flask Project
 
 ### Project was to create the REST APIs using flask and models
 
