@@ -65,8 +65,8 @@ def create_app(db_url=None):
         return (jsonify({"description": "Request does not contain as access token.",
                          "error": "authorization_required"}), 401)
 
-    #with app.app_context():
-        #db.create_all()
+    app.app_context()
+    # db.create_all()
 
     api.register_blueprint(ItemBlueprint)
     api.register_blueprint(StoreBlueprint)
